@@ -1,0 +1,23 @@
+{
+  "name": "mica_thainguyen",
+  "version": "1.0.0",
+  "description": "My sensational Nuxt.js project",
+  "author": "cuonglv",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.0-rc.23",
+    "nuxt": "^2.0.0",
+    "simple-line-icons": "^2.4.1",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
