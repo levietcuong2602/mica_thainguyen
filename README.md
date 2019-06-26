@@ -1,6 +1,10 @@
 # mica_thainguyen
 
 > My sensational Nuxt.js project
+node_module/vue-awesome-swiper/src/index
+node_module/vue-awesome-swiper/src/ssr
+thêm code:
+typeof window !== 'undefined' && trước chỗ dùng window
 
 ## Build Setup
 
