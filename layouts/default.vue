@@ -1,15 +1,20 @@
 <template>
-  <div>
-    <ContentHeader />
-    <nuxt />
+  <div class="layout">
+    <HeaderContent />
+    <div class="main">
+      <nuxt />
+    </div>
+    <FooterContent />
   </div>
 </template>
 <script>
-import ContentHeader from '~/components/Header/ContentHeader';
+import HeaderContent from '~/components/Header/HeaderContent';
+import FooterContent from '~/components/Footer/FooterContent';
 
 export default {
   components: {
-    ContentHeader,
+    HeaderContent,
+    FooterContent
   }
 }
 </script>
