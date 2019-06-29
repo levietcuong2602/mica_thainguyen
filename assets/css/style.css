@@ -84,11 +84,16 @@ button.el-carousel__button {
   color: #000;
 }
 
+.blog-share {
+  display: flex;
+  justify-content: center;
+}
+
 .blog-share .item-logo {
   border: 2px solid gray;
   margin-left: 0.12em;
   margin-right: 0.12em;
-  min-width: 2.5em;
+  width: 35px;
   border-radius: 50%;
   padding: 4px;
 }
@@ -97,41 +102,41 @@ button.el-carousel__button {
   min-width: 1.5em;
 }
 
-.entry-main .blog-share .item-logo {
+.blog-share .item-logo {
   color: gray;
 }
 
-.entry-main .blog-share .facebook-icon:hover {
+.blog-share .facebook-icon:hover {
   background-color: #3a589d !important;
   border-color: #3a589d;
   color: #fff;
 }
 
-.entry-main .blog-share .twitter-icon:hover {
+.blog-share .twitter-icon:hover {
   background-color: #2478ba !important;
   border-color: #2478ba !important;
   color: #fff;
 }
 
-.entry-main .blog-share .mail-icon:hover {
+.blog-share .mail-icon:hover {
   background-color: #111 !important;
   border-color: #111 !important;
   color: #fff;
 }
 
-.entry-main .blog-share .printerest-icon:hover {
+.blog-share .printerest-icon:hover {
   background-color: #cb2320 !important;
   border-color: #cb2320 !important;
   color: #fff;
 }
 
-.entry-main .blog-share .google-icon:hover {
+.blog-share .google-icon:hover {
   background-color: #dd4e31 !important;
   border-color: #dd4e31 !important;
   color: #fff;
 }
 
-.entry-main .blog-share .linked-icon:hover {
+.blog-share .linked-icon:hover {
   background-color: #0072b7 !important;
   border-color: #0072b7 !important;
   color: #fff;
@@ -390,4 +395,155 @@ button.el-carousel__button {
 .product-list {
   background-color: #fff;
   /* padding: 5px; */
+}
+
+/* Product Detail Page */
+.product-detail .infor-product {
+  background-color: #fff;
+  padding: 5px;
+}
+
+.product-detail .infor-product .img-responsive {
+  width: 100%;
+  height: 100%;
+}
+
+.product-detail .infor-product .breadcrumb {
+  background-color: #fff;
+}
+
+.product-detail .infor-product ol.breadcrumb {
+  padding: 0px;
+  margin: 0px;
+}
+
+.infor-product .img-small-wrap .item-gallery {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #ddd;
+  margin: 7px 2px;
+  overflow: hidden;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+}
+
+.infor-product .img-small-wrap {
+  text-align: center;
+  margin: auto;
+  display: flex;
+}
+
+.infor-product .img-small-wrap img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.infor-product .ratings {
+  display: flex;
+}
+
+.infor-product .ratings .ratings-link {
+  margin: 0px;
+}
+
+.infor-product .ratings .ratings-link a {
+  font-size: 85%;
+  color: #000;
+  text-decoration: none;
+}
+
+.infor-product .ratings .ratings-link a:hover {
+  color: #e83f33;
+}
+
+.infor-product .price-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.infor-product .price-box .special-price {
+  font-size: 125%;
+  font-weight: 500;
+  color: #f0451e;
+}
+
+.infor-product .price-box .old-price {
+  text-decoration: line-through;
+}
+
+.infor-product .price-box .sales-price {
+  font-size: 90%;
+  background: #f0451e;
+  line-height: 1;
+  border-radius: 2px;
+  padding: 2px 4px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.infor-product .title-size {
+  display: flex;
+  align-items: center;
+}
+
+.infor-product .title-size p {
+  margin: 0px;
+  font-size: 90%;
+  font-weight: 500;
+}
+
+.infor-product .numbers-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.infor-product .numbers-row .numbers {
+  display: flex;
+}
+
+.infor-product .numbers-row .numbers .qtybutton {
+  background-color: #eeeeee;
+  transition: color 300ms ease-in-out 0s, background-color 300ms ease-in-out 0s, background-position 300ms ease-in-out 0s;
+  color: #333333;
+  font-size: 14px;
+  padding: 12px 14px 9px 16px;
+  line-height: 18px;
+  display: inline-block;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.infor-product .numbers-row .numbers .qtybutton:hover {
+  background-color: #e83f33;
+  color: #fff;
+}
+
+.infor-product .numbers-row .numbers .qty {
+  border: 1px solid #e5e5e5;
+  color: #333333;
+  float: left;
+  font-size: 18px;
+  font-weight: 600;
+  height: 40px;
+  margin-right: 8px;
+  padding: 0 5px 1px;
+  text-align: center;
+  width: 65px;
+  margin-left: 8px;
+  border-radius: 3px;
+}
+
+.infor-product .numbers-row span {
+  font-size: 85%;
+  color: #000;
 }

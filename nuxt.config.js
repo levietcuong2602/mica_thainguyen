@@ -52,6 +52,10 @@ export default {
     '~/plugins/bootstrap-vue.js',
     '~/plugins/element-ui.js',
     {
+      src: '~/plugins/vue-easy-lightbox.js',
+      ssr: false
+    },
+    {
       src: '~plugins/vue-awesome-swiper',
       ssr: false
     },

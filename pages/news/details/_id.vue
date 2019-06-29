@@ -17,44 +17,7 @@
           <div class="entry-main">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia officia id numquam esse voluptatum voluptate quo aliquid earum unde pariatur eveniet, itaque magnam vitae quos reprehenderit porro nemo optio aut?</p>
             <hr>
-            <div class="blog-share text-center">
-              <a
-                class="item-logo facebook-icon"
-                href="#"
-              >
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a
-                class="item-logo twitter-icon"
-                href="#"
-              >
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a
-                class="item-logo mail-icon"
-                href="#"
-              >
-                <i class="far fa-envelope"></i>
-              </a>
-              <a
-                class="item-logo printerest-icon"
-                href="#"
-              >
-                <i class="fab fa-pinterest"></i>
-              </a>
-              <a
-                class="item-logo google-icon"
-                href="#"
-              >
-                <i class="fab fa-google-plus-g"></i>
-              </a>
-              <a
-                class="item-logo linked-icon"
-                href="#"
-              >
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </div>
+            <BlogShare />
             <hr>
           </div>
           <footer class="entry-footer">
@@ -135,11 +98,13 @@
 </template>
 <script>
 import Asidebar from '@/components/MainContent/Sidebar/Asidebar';
+import BlogShare from '@/components/MainContent/Sections/BlogShare';
 
 export default {
   name: 'Detail',
   components: {
-    Asidebar
+    Asidebar,
+    BlogShare
   },
   data() {
     return {

@@ -1,6 +1,22 @@
 <template>
   <div class="container">
     <div class="row mt-3">
+      <div style="flex-grow: 1;">
+        <b-breadcrumb :items="items"></b-breadcrumb>
+      </div>
+      <div class="d-flex">
+        <div class="col-lg-4 col-md-5 col-sm-5 col-5 pr-1">
+          <p style="font-size: 85%;">Xem tất cả 18 kết quả</p>
+        </div>
+        <div class="col-lg-8 col-md-7 col-sm-7 col-7 pl-0">
+          <b-form-select
+            v-model="selected"
+            :options="options"
+          ></b-form-select>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3">
       <div class="col-lg-3 col-md-3 col-sm-6 col-12">
         <div class="asidebar">
           <div class="title"><span>DANH MỤC SẢN PHẨM</span></div>
@@ -83,6 +99,28 @@ export default {
           title: 'Kệ trưng bày sản phẩm Mica',
           count: 0
         },
+      ],
+      items: [
+        {
+          text: 'Admin',
+          href: '#'
+        },
+        {
+          text: 'Manage',
+          href: '#'
+        },
+        {
+          text: 'Library',
+          active: true
+        }
+      ],
+      selected: null,
+      options: [
+        { value: null, text: 'Please select an option' },
+        { value: 'a', text: 'This is First option' },
+        { value: 'b', text: 'Selected Option' },
+        { value: { C: '3PO' }, text: 'This is an option with object value' },
+        { value: 'd', text: 'This one is disabled', disabled: true }
       ]
     }
   }

@@ -7,7 +7,7 @@
       <img
         :src="brand.img"
         alt="brand img"
-        style="width: auto; height: 100%;"
+        style="width: 100%; height: 100%;"
       >
     </swiper-slide>
     <div
@@ -33,6 +33,24 @@ export default {
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          1200: {
+            slidesPerView: 6,
+            spaceBetween: 20
+          },
+          992: {
+            slidesPerView: 5,
+            spaceBetween: 20
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 10
+          },
+          576: {
+            slidesPerView: 3,
+            spaceBetween: 10
+          }
         }
       },
       brands: [
@@ -66,33 +84,6 @@ export default {
 }
 </script>
 <style scoped>
-.swiper-slide {
-  width: 60%;
-}
-.swiper-slide:nth-child(2n) {
-  width: 40%;
-}
-.swiper-slide:nth-child(3n) {
-  width: 20%;
-}
-.swiper-container {
-  /* height: 100%; */
-  width: 100%;
-}
-.swiper-slide {
-  text-align: center;
-  height: 70px;
-  display: flex;
-  font-weight: 700;
-  background-color: rgb(255, 255, 255);
-  padding-bottom: 10px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
 .swiper-button-next,
 .swiper-button-prev {
   /* display: none; */
