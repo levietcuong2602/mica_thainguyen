@@ -547,3 +547,57 @@ button.el-carousel__button {
   font-size: 85%;
   color: #000;
 }
+
+.product-detail .description-product {
+  background-color: #fff;
+  padding: 5px;
+}
+
+.product-detail .description-product .review-form-wrap {
+  border: 2px solid #dd3333;
+  padding: 15px 30px 30px;
+}
+
+/* top header */
+.top-header .title-welcome {
+  font-size: 75%;
+  margin: 0px;
+}
+
+.top-header .header-link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.top-header .header-link .register-agent a span {
+  border-left: 1px #ccc solid;
+  padding-left: 10px;
+}
+
+.top-header .header-link .guide-payment a,
+.top-header .header-link .register-agent a {
+  color: rgba(102, 102, 102, 0.85);
+  transition: all .2s;
+  font-size: 90%;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+.top-header .header-link .guide-payment a:hover,
+.top-header .header-link .register-agent a:hover {
+  color: #000;
+  transition: all .2s;
+  font-size: 90%;
+  text-decoration: none;
+}
+
+.top-header .header-link .share-web a {
+  color: rgba(102, 102, 102, 0.85);
+  font-size: 70%;
+  padding-right: 5px;
+}
+
+.top-header .header-link .share-web a:hover {
+  color: #000;
+}

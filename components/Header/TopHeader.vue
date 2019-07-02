@@ -2,25 +2,18 @@
   <div class="top-header">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-6">
-          <b-nav>
-            <b-nav-item
-              style="color: #333333"
-              disabled
-            >Chào mừng bạn đến với mẫu web bán Mica của Topweb</b-nav-item>
-          </b-nav>
+        <div class="col-md-4 col-sm-4 col-12">
+          <p class="title-welcome d-none d-md-block">Chào mừng bạn đến với mẫu web bán Mica của Topweb</p>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 float-right">
-          <b-nav style="justify-content: flex-end;">
-            <b-nav-item href="#">Huong dan thanh toan</b-nav-item>
-            <b-nav-item href="#">Dang ky dai ly</b-nav-item>
-            <b-nav-item>
-              <i class="icon-social-facebook black"></i>
-              <i class="icon-social-instagram"></i>
-              <i class="icon-social-twitter"></i>
-              <i class="icon-envelope"></i>
-            </b-nav-item>
-          </b-nav>
+        <div class="col-md-8 col-sm-8 col-12 header-link">
+          <span class="guide-payment d-none d-md-block"><a href="#">Hướng dẫn thanh toán</a></span>
+          <span class="register-agent d-none d-md-block"><a href="#"><span>Đăng ký đại lý</span></a></span>
+          <div class="share-web d-none d-md-block">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="far fa-envelope"></i></a>
+          </div>
         </div>
       </div>
     </div>
@@ -31,23 +24,3 @@ export default {
   name: 'TopHeader'
 }
 </script>
-<style scoped>
-.top-header {
-  background-color: #efefef;
-  min-height: 30px;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-}
-.nav > .nav-item {
-  font-size: 0.75em;
-  font-family: "-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif",
-    sans-serif;
-}
-.nav > .nav-item > a {
-  color: #6c757d;
-}
-.nav > .nav-item > a:hover {
-  color: rgba(17, 17, 17, 0.85);
-}
-</style>

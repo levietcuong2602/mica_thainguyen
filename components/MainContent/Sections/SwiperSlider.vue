@@ -1,40 +1,10 @@
 <template>
   <no-ssr>
     <swiper :options="swiperOption">
-      <swiper-slide>
-        <SwiperItem></SwiperItem>
-      </swiper-slide>
-      <swiper-slide>
-        <SwiperItem></SwiperItem>
-      </swiper-slide>
-      <swiper-slide>
-        <SwiperItem></SwiperItem>
-      </swiper-slide>
-      <swiper-slide>
-        <SwiperItem></SwiperItem>
-      </swiper-slide>
-      <swiper-slide>
-        <SwiperItem></SwiperItem>
-      </swiper-slide>
-      <swiper-slide>
-        <SwiperItem></SwiperItem>
-      </swiper-slide>
-      <swiper-slide>
-        <SwiperItem></SwiperItem>
-      </swiper-slide>
-      <swiper-slide>
-        <SwiperItem></SwiperItem>
-      </swiper-slide>
-      <swiper-slide>
-        <SwiperItem></SwiperItem>
-      </swiper-slide>
-      <swiper-slide>
-        <SwiperItem></SwiperItem>
-      </swiper-slide>
-      <swiper-slide>
-        <SwiperItem></SwiperItem>
-      </swiper-slide>
-      <swiper-slide>
+      <swiper-slide
+        v-for="i in 10"
+        :key="i"
+      >
         <SwiperItem></SwiperItem>
       </swiper-slide>
       <div

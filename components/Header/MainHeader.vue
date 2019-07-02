@@ -2,84 +2,122 @@
   <div class="header-main">
     <div class="container">
       <div class="row">
-        <b-navbar
-          toggleable="lg"
-          type="dark"
-          variant="light"
-          style="width: 100%; min-height: 90px;"
-        >
-          <b-navbar-toggle
-            class="navbar-toggler"
-            target="nav-collapse"
-          ></b-navbar-toggle>
-          <b-navbar-brand
-            href="#"
-            class="text-center"
-          >
-            <img
-              src="@/static/img/LOGO1.png"
-              alt="logo"
-              class="logo d-inline-block align-top"
+        <div class="col-md-3 col-sm-3 col-12">
+          <div class="top-logo">
+            <a
+              class="e-commerce"
+              href="/"
             >
-          </b-navbar-brand>
-
-          <b-collapse
-            id="nav-collapse"
-            is-nav
-          >
-            <b-navbar-nav>
-              <b-nav-item href="/">Trang chủ</b-nav-item>
-              <b-nav-item href="/introduction">Giới thiệu</b-nav-item>
-              <b-nav-item href="/products">Sản phẩm</b-nav-item>
-              <b-nav-item href="/services">Dịch vụ</b-nav-item>
-              <b-nav-item href="/news">Tin tức</b-nav-item>
-              <b-nav-item href="/contacts">Liên hệ</b-nav-item>
-            </b-navbar-nav>
-
-            <b-navbar-nav class="ml-auto">
-              <b-nav-item href="#">Đăng nhập</b-nav-item>
-              <b-nav-item href="#">Giỏ hàng
-                <i class="icon-handbag"></i>
-              </b-nav-item>
-            </b-navbar-nav>
-          </b-collapse>
-        </b-navbar>
+              <img
+                src="~/static/img/LOGO1.png"
+                alt="logo"
+              >
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-5 col-12 search-wrap">
+          <div class="top-search">
+            <form>
+              <input
+                type="search"
+                placeholder="Nhập từ khóa bạn muốn tìm kiếm"
+                class="search-input"
+              >
+              <button
+                type="buttom"
+                class="submit btn-search"
+              ><i class="fa fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-12 top-cart">
+          <div class="link-wishlist">
+            <a href="#"><i class="icon-heart icons"></i><span> Yêu thích</span></a>
+          </div>
+          <div class="top-cart-container">
+            <CartDropdown />
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 <script>
+import CartDropdown from './CartDropdown';
+
 export default {
-  name: 'MainHeader'
+  name: 'MainHeader',
+  components: {
+    CartDropdown
+  }
 }
 </script>
 <style scoped>
 .header-main {
-  min-height: 90px;
-  background-color: #f8f9fa !important;
-  padding: 0;
-  margin: 0;
-}
-.logo {
-  padding: 11px 0;
-  width: 200px;
-  font-weight: 700;
+  background-color: #fff;
 }
 
-.navbar-nav > .nav-item > a {
+.top-logo {
+  text-align: center;
+}
+
+.top-logo img {
+  width: 70%;
+}
+
+.search-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.top-search {
+  width: 100%;
+}
+.search-input {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  padding: 0 0.75em;
+  font-size: 0.85em;
+  border-radius: 0;
+  max-width: 90%;
+  width: 90%;
+  background-color: #fff;
+  color: #333;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s, border 0.3s, background 0.3s, opacity 0.3s;
+  height: 40px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.btn-search {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #f79c3a;
+  border-color: rgba(0, 0, 0, 0.05);
+  color: #fff;
+}
+.btn-search:hover {
+  outline: none;
+  opacity: 1;
+  color: #fff;
+  box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.2);
+}
+.top-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.link-wishlist a {
+  font-size: 90%;
+  font-weight: 500;
   color: #0a0a0a;
-  font-weight: 700;
+  text-decoration: none;
 }
-.navbar-nav > .nav-item > a:hover,
-.navbar-nav > .nav-item > a:focus,
-.navbar-nav > .nav-item > a:active {
-  color: #dd3333;
-}
-.navbar-dark .navbar-nav .show > .nav-link,
-.navbar-dark .navbar-nav .active > .nav-link,
-.navbar-dark .navbar-nav .nav-link.show,
-.navbar-dark .navbar-nav .nav-link.active {
-  color: #dd3333;
+.link-wishlist a:hover {
+  color: #dc3545;
 }
 </style>
-

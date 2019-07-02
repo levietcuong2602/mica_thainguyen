@@ -6,7 +6,6 @@
           <div class="col-lg-5 col-md-6 col-sm-12">
             <div class="row">
               <div
-                :key="index"
                 @click="() => showImg(index)"
                 style="width: 100%;"
               >
@@ -65,7 +64,7 @@
                 >
                   <el-option
                     v-for="size in sizeOptions"
-                    :key="size"
+                    :key="size.label"
                     :label="size.label"
                     :value="size.value"
                   >
@@ -139,6 +138,110 @@
             <BlogShare />
           </div>
         </div>
+        <div class="row mt-3 description-product">
+          <el-tabs v-model="activeName">
+            <el-tab-pane
+              label="MÔ TẢ"
+              name="description"
+            >
+              <div class="description mt-3">
+                <h4>Thông tin Hộp mica kỹ thuật HMKT-1612</h4>
+                <h5>Đặc điểm nổi bật</h5>
+                <div class="row">
+                  <div class="col-4">– Tên sản phẩm :</div>
+                  <div class="col-8">Hộp mica kỹ thuật HMKT-1612</div>
+                </div>
+                <div class="row">
+                  <div class="col-4">– Ngày sản xuất :</div>
+                  <div class="col-8">15/12/2015</div>
+                </div>
+                <div class="row">
+                  <div class="col-4">– Chất liệu : </div>
+                  <div class="col-8">mica trong suốt Đài Loan</div>
+                </div>
+                <div class="row">
+                  <div class="col-4">– Độ dày </div>
+                  <div class="col-8">3mm</div>
+                </div>
+                <div class="row">
+                  <div class="col-4">– Độ dày </div>
+                  <div class="col-8">3mm</div>
+                </div>
+                <p>– Sản phẩm thiết kế gồm 5 mặt trên được lắp bản lề giúp bạn có thể đóng mở nắp hộ</p>
+                <p>– Thiết kế đơn giản</p>
+                <p>– Chất liệu mica giúp bạn dễ bảo quản, làm sạch nhanh bằng nước xà phòng hoặc kem đánh răng bền và ổn định lý hóa theo thời gian</p>
+                <p>– Sản phẩm được sử dụng trong các khu công nghiệp, các nhà xưởng…hoặc bạn cũng có thể sử dụng chúng ở bất cứ đâu tùy theo nhu cầu của mình.</p>
+                <p>– Kích thước có thể tùy chỉnh, tùy theo yêu cầu đặt mẫu bên trong</p>
+                <h5>Thông tin chi tiết</h5>
+                <p><b>Hộp mica kỹ thuật HMKT-1612</b></p>
+                <p>được làm từ chất liệu mica trong suốt 3mm Đài Loan, sản phẩm thiết kế gồm 5 mặt trên được lắp bản lề giúp bạn có thể đóng mở nắp hộp. Chất liệu mica giúp bạn dễ bảo quản, làm sạch nhanh bằng nước xà phòng hoặc kem đánh răng bền và ổn định lý hóa theo thời gian</p>
+              </div>
+            </el-tab-pane>
+            <el-tab-pane
+              label="ĐÁNH GIÁ"
+              name="consider"
+            >
+              <div class="consider mt-3">
+                <h5>Đánh giá</h5>
+                <div class="comments">
+                  <p>Chưa có đánh giá nào</p>
+                </div>
+                <div class="review-form-wrap">
+                  <h5>Hãy là người đầu tiên nhận xét “Hộp mica kỹ thuật HMKT-1612” </h5>
+                  <div class="your-ratings">
+                    <p><b>Đánh giá của bạn</b></p>
+                    <el-rate v-model="ratingConsider"></el-rate>
+                  </div>
+                  <el-form
+                    ref="form"
+                    :model="form"
+                  >
+                    <el-form-item>
+                      <label for="comment-field"><b>Nhận xét của bạn *</b></label>
+                      <el-input
+                        type="textarea"
+                        v-model="form.comment"
+                        name="comment-field"
+                        id="comment-field"
+                        :rows="5"
+                      ></el-input>
+                    </el-form-item>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <el-form-item>
+                          <label for="name-field"><b>Tên *</b></label>
+                          <el-input
+                            name="name-field"
+                            id="name-field"
+                            v-model="form.name"
+                          ></el-input>
+                        </el-form-item>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <el-form-item>
+                          <label for="email-field"><b>Email *</b></label>
+                          <el-input
+                            name="email-field"
+                            id="email-field"
+                            v-model="form.email"
+                          ></el-input>
+                        </el-form-item>
+                      </div>
+                    </div>
+                    <el-form-item>
+                      <el-button type="danger">GỬI ĐI</el-button>
+                    </el-form-item>
+                  </el-form>
+                </div>
+              </div>
+            </el-tab-pane>
+          </el-tabs>
+        </div>
+        <div class="row mt-3 product-same">
+          <SectionContent title="Sản phẩm tương tự">
+            <SwiperSlider />
+          </SectionContent>
+        </div>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-6 col-12">
         <div>
@@ -154,9 +257,15 @@ import FeatureBox from '@/components/MainContent/Sidebar/FeatureBox';
 import NProductAside from '@/components/MainContent/Sidebar/NProductAside';
 import BlogShare from '@/components/MainContent/Sections/BlogShare';
 import ThumbnailZoom from '@/components/MainContent/Products/ThumbnailZoom';
+import ProductItem from '@/components/MainContent/Sections/ProductItem';
+import SectionContent from '@/components/MainContent/Sections/SectionContent';
+import SwiperSlider from '@/components/MainContent/Sections/SwiperSlider';
+
+import { swiperOptions } from '@/mixins/swiper-options';
 
 export default {
   name: 'ProductDetail',
+  mixins: [swiperOptions],
   data() {
     return {
       items: [
@@ -193,6 +302,13 @@ export default {
       ],
       colors: [],
       amount: 1,
+      activeName: 'description',
+      form: {
+        comment: '',
+        name: '',
+        email: ''
+      },
+      ratingConsider: 5,
     }
   },
   props: {
@@ -205,7 +321,10 @@ export default {
     FeatureBox,
     NProductAside,
     BlogShare,
-    ThumbnailZoom
+    ThumbnailZoom,
+    ProductItem,
+    SectionContent,
+    SwiperSlider
   },
   methods: {
     showImg(index) {
@@ -224,5 +343,8 @@ export default {
 <style scoped>
 .el-select {
   display: block;
+}
+.el-tabs.el-tabs--top {
+  width: 100%;
 }
 </style>

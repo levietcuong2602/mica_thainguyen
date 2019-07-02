@@ -11,7 +11,7 @@
         <el-button
           type="text"
           class="button"
-        >Operating</el-button>
+        >Đọc tiếp</el-button>
       </div>
     </div>
   </el-card>

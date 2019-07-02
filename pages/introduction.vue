@@ -121,7 +121,7 @@
                 class="text-danger"
               >Biểu mẫu liên hệ tại đây:</p>
               <a
-                href="/contact"
+                href="/contacts"
                 class="btn-contact"
               >
                 <i class=" fa fa-play"></i> Liên hệ tư vấn
