@@ -605,6 +605,7 @@ button.el-carousel__button {
 /* main header */
 .header-main {
   background-color: #fff;
+  padding: 5px 0px;
 }
 
 .header-main .top-logo {
