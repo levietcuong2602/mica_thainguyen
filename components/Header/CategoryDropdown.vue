@@ -265,7 +265,6 @@ li {
     right: -21px;
     width: 230px;
     height: auto;
-    padding: 2rem 2rem 2rem 0;
     margin-top: 10px;
     background-color: white;
     border: 1px solid #dadce0;

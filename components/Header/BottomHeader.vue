@@ -12,7 +12,11 @@
             </b-navbar-nav> -->
             <CategoryDropdown />
 
-            <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+            <b-navbar-toggle
+              target="nav-collapse1"
+              @click="showSideoutMenu"
+            ></b-navbar-toggle>
+
             <b-collapse
               id="nav-collapse"
               is-nav
@@ -40,7 +44,6 @@
             </b-collapse>
 
           </b-navbar>
-
           <!-- <nav class="navbar navbar-expand-lg navbar-light">
             <button
               class="navbar-toggler"
@@ -87,6 +90,7 @@
 // }
 import CategoryDropdown from './CategoryDropdown';
 import SlideoutMenu from './SlideoutMenu';
+import { mapGetters } from 'vuex';
 
 export default {
   name: 'BottomHeader',
@@ -95,6 +99,15 @@ export default {
     CategoryDropdown,
     SlideoutMenu
   },
+  computed: {
+    ...mapGetters(['getIsOpenSideout'])
+  },
+  methods: {
+    showSideoutMenu() {
+      const isOpen = this.getIsOpenSideout;
+      this.$store.dispatch('updateIsOpenSideout', !isOpen);
+    }
+  }
 }
 </script>
 <style scoped>

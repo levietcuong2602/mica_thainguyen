@@ -69,14 +69,13 @@
             <div
               class="fb-page"
               data-href="http://www.facebook.com/topweb.com.vn"
-              data-width="380"
               data-hide-cover="false"
               data-show-facepile="false"
             >
               <span style="vertical-align: bottom; width: 340px; height: 214px;"><iframe
                   name="f3a6486ca6b14c"
-                  width="340px"
-                  height="375px"
+                  width="100%"
+                  height="100%"
                   title="fb:like_box Facebook Social Plugin"
                   frameborder="0"
                   allowtransparency="true"
@@ -84,7 +83,7 @@
                   scrolling="no"
                   allow="encrypted-media"
                   src="https://www.facebook.com/plugins/like_box.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D44%23cb%3Df34cdf1371cfd8%26domain%3Dmica.thainguyenweb.com%26origin%3Dhttps%253A%252F%252Fmica.thainguyenweb.com%252Ff932cbf1ce0d%26relation%3Dparent.parent&amp;container_width=0&amp;header=false&amp;height=375&amp;href=http%3A%2F%2Fwww.facebook.com%2Ftopweb.com.vn&amp;locale=en_US&amp;sdk=joey&amp;show_faces=true&amp;stream=false&amp;width=340"
-                  style="border: none; visibility: visible; width: 340px; height: 214px;"
+                  style="border: none; visibility: visible; width: 100%; height: 214px;"
                   class=""
                 ></iframe>
               </span>

@@ -1,0 +1,94 @@
+.zap-slideout {
+  position: fixed;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  /* padding: 30px; */
+  padding: 30px 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  transform: translateX(-100%);
+  z-index: 1000;
+  transition: 0.5s;
+  /* overflow-x: hidden; */
+}
+
+.zap-slideout .search-form {
+  padding: 20px;
+}
+
+.zap-slideout .zap-slideout-menu {
+  padding-left: 0px;
+}
+
+.zap-slideout .zap-slideout-menu .zap-slideout-menu-item {
+  border-top: 1px solid #ececec;
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+.zap-slideout .zap-slideout-menu .zap-slideout-menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.zap-slideout .zap-slideout-menu .zap-slideout-menu-item a {
+  text-decoration: none;
+  color: rgba(102, 102, 102, 0.85);
+  transition: all 0.2s;
+  font-weight: 400;
+  width: 100%;
+}
+
+.zap-slideout .zap-slideout-menu .top-search .search-input {
+  font-size: 85%;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.zap-slideout .zap-slideout-menu .top-search .btn-search {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #f79c3a;
+  border-color: rgba(0, 0, 0, 0.05);
+  color: #fff;
+}
+
+/* Animation slideout */
+.zap-slideout.isOpen {
+  transform: translateX(0);
+}
+
+.zap-slideout-opener {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 93%;
+  margin-left: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.zap-slideout-opener .header--btn {
+  cursor: pointer;
+  padding: 0;
+  display: inline-block;
+  border: 1px solid transparent;
+  background-color: transparent;
+  appearance: none;
+  user-select: none;
+}
+
+.zap-slideout-opener.isOpen {
+  display: inline;
+}

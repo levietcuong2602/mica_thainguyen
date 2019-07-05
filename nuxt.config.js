@@ -44,6 +44,7 @@ export default {
     '~/node_modules/simple-line-icons/css/simple-line-icons.css',
     'swiper/dist/css/swiper.css',
     '~/assets/css/style.css',
+    '~/assets/css/slideout-menu.css',
   ],
   /*
    ** Plugins to load before mounting the App

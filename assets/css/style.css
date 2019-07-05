@@ -664,6 +664,11 @@ button.el-carousel__button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-main .top-cart .link-wishlist {
+  padding-left: 15px;
 }
 
 .header-main .top-cart .link-wishlist a {
