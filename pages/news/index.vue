@@ -15,7 +15,10 @@
             <PostItem />
           </div>
 
-          <div class="row float-right">
+          <div
+            class="row"
+            style="justify-content: center;"
+          >
             <el-pagination
               background
               :pager-count="4"

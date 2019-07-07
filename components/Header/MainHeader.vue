@@ -2,7 +2,10 @@
   <div class="header-main">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-sm-3 col-12">
+        <div
+          class="col-md-3 col-sm-3 col-12"
+          style="display: flex; align-items: center; justify-content: center;"
+        >
           <div class="top-logo">
             <a
               class="e-commerce"

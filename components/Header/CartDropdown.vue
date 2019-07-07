@@ -26,14 +26,14 @@
       </b-dropdown-header>
       <b-dropdown-item href="#">
         <div class="row">
-          <div class="col-sm-4 col-12">
+          <div class="col-sm-4 col-4">
             <img
               src="https://mica.thainguyenweb.com/wp-content/uploads/2018/06/hop_20dung_20banh_20sinh_20nhat_20nap_20den_2022cm_grande.jpg"
               alt="image product"
               style="width: 100%;"
             >
           </div>
-          <div class="col-sm-8 col-12">
+          <div class="col-sm-8 col-8">
             <h5 style="font-size: 85%;">Hộp Mica Kỹ thuật 2808</h5>
             <p>Giá: <span>60.000 đ</span></p>
           </div>

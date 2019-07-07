@@ -1,5 +1,5 @@
 <template>
-  <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-3">
+  <div class="col-lg-3 col-md-3 col-sm-6 col-6 mb-3">
     <a
       class="post-content"
       :href="'/news/details/'+id"

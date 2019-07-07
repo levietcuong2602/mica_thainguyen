@@ -39,6 +39,7 @@
                 <b-nav-item
                   class="buy-now"
                   href="#"
+                  style="color: #fff;"
                 >Mua ngay</b-nav-item>
               </b-navbar-nav>
             </b-collapse>
@@ -123,17 +124,31 @@ export default {
   font-size: 90%;
   font-weight: 500;
 }
-.nav-item.phone-number {
-  background-color: #f79c3a;
-  border-radius: 3px;
+
+.navbar-nav .nav-item a {
   color: #fff;
+}
+.nav-item.phone-number {
+  color: #fff;
+  display: flex;
+  align-items: center;
   margin-right: 10px;
 }
-.nav-item.buy-now {
+.nav-item.buy-now > a {
+  color: #fff;
   border: 2px solid #fff;
   border-radius: 3px;
+  padding: 3px 10px;
 }
-.navbar-nav .nav-item a {
-  color: #000;
+.nav-item.phone-number > a {
+  color: #fff;
+  background-color: #f79c3a;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.nav-item.buy-now {
+  color: #fff;
+  display: flex;
+  align-items: center;
 }
 </style>

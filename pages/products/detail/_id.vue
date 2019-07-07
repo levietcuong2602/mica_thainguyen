@@ -6,7 +6,7 @@
           <div class="col-lg-5 col-md-6 col-sm-12">
             <div class="row">
               <div
-                @click="() => showImg(index)"
+                @click="() => showImg()"
                 style="width: 100%;"
               >
                 <img
@@ -86,7 +86,7 @@
                 >
                   <el-option
                     v-for="color in colorOptions"
-                    :key="color"
+                    :key="color.label"
                     :label="color.label"
                     :value="color.value"
                   >
@@ -126,13 +126,22 @@
               class="row mt-3"
               style="justify-content: center;"
             >
-              <el-button
-                type="primary"
+              <b-button
                 @click="handleNotification"
+                variant="danger"
+                class="mr-3"
+              >
+                <i class="fa fa-shopping-basket"></i>
+                Thêm vào giỏ hàng
+              </b-button>
+              <b-button
+                v-b-modal.modal-dialog
+                variant="primary"
               >
                 <i class="fa fa-shopping-cart"></i>
                 Mua ngay
-              </el-button>
+              </b-button>
+              <BuyProductModal />
             </div>
             <hr>
             <BlogShare />
@@ -256,15 +265,19 @@
 import FeatureBox from '@/components/MainContent/Sidebar/FeatureBox';
 import NProductAside from '@/components/MainContent/Sidebar/NProductAside';
 import BlogShare from '@/components/MainContent/Sections/BlogShare';
+
 import ThumbnailZoom from '@/components/MainContent/Products/ThumbnailZoom';
+import BuyProductModal from '@/components/MainContent/Modals/BuyProductModal';
+
 import ProductItem from '@/components/MainContent/Sections/ProductItem';
 import SectionContent from '@/components/MainContent/Sections/SectionContent';
 import SwiperSlider from '@/components/MainContent/Sections/SwiperSlider';
 
+
 import { swiperOptions } from '@/mixins/swiper-options';
 
 export default {
-  name: 'ProductDetail',
+  name: 'ProductDetailPage',
   mixins: [swiperOptions],
   data() {
     return {
@@ -324,11 +337,12 @@ export default {
     ThumbnailZoom,
     ProductItem,
     SectionContent,
-    SwiperSlider
+    SwiperSlider,
+    BuyProductModal
   },
   methods: {
-    showImg(index) {
-      this.index = index
+    showImg() {
+      // this.index = index
       this.visible = true
     },
     handleHide() {

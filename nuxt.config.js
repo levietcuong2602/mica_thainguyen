@@ -60,6 +60,10 @@ export default {
       src: '~plugins/vue-awesome-swiper',
       ssr: false
     },
+    {
+      src: 'plugins/owl.js',
+      ssr: false
+    }
   ],
   /*
    ** Nuxt.js modules

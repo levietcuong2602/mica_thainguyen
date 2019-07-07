@@ -1,6 +1,9 @@
 <template>
   <div class="item-feature">
-    <div class="row">
+    <div
+      class="row"
+      style="align-items: center;"
+    >
       <div class="col-lg-4 col-md-4 col-sm-3 col-2">
         <img
           class="img-responsive"

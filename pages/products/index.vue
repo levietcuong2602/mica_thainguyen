@@ -1,62 +1,61 @@
 <template>
-  <div class="container">
-    <div class="row mt-3">
-      <div style="flex-grow: 1;">
-        <b-breadcrumb :items="items"></b-breadcrumb>
-      </div>
-      <div class="d-flex">
-        <div class="col-lg-4 col-md-5 col-sm-5 col-5 pr-1">
-          <p style="font-size: 85%;">Xem tất cả 18 kết quả</p>
-        </div>
-        <div class="col-lg-8 col-md-7 col-sm-7 col-7 pl-0">
-          <b-form-select
-            v-model="selected"
-            :options="options"
-          ></b-form-select>
+  <div>
+    <div class="page-title">
+      <div class="container">
+        <div class="order-by">
+          <p>Xem tất cả 18 kết quả</p>
+          <b-form>
+            <b-form-select
+              v-model="selected"
+              :options="options"
+            ></b-form-select>
+          </b-form>
         </div>
       </div>
     </div>
-    <div class="row mt-3">
-      <div class="col-lg-3 col-md-3 col-sm-6 col-12">
-        <div class="asidebar">
-          <div class="title"><span>DANH MỤC SẢN PHẨM</span></div>
-          <ul class="category-product">
-            <li
-              v-for="category in categories"
-              :key="category.title"
-            >
-              <hr v-if="category !== categories[0]">
-              <div
-                class="product-item d-flex"
-                style="justify-content: space-between;"
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+          <div class="asidebar">
+            <div class="title"><span>DANH MỤC SẢN PHẨM</span></div>
+            <ul class="category-product">
+              <li
+                v-for="category in categories"
+                :key="category.title"
               >
-                <a href="#">{{ category.title }}</a>
-                <span>({{ category.count }})</span>
-              </div>
-            </li>
-          </ul>
+                <hr v-if="category !== categories[0]">
+                <div
+                  class="product-item d-flex"
+                  style="justify-content: space-between;"
+                >
+                  <a href="#">{{ category.title }}</a>
+                  <span>({{ category.count }})</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <FeatureBox />
         </div>
-        <FeatureBox />
-      </div>
-      <div class="col-lg-9 col-md-9 col-sm-6 col-12 product-list">
-        <div class="row">
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-        </div>
-        <div class="row mt-3">
-          <el-pagination
-            class="product-pagination"
-            background
-            :pager-count="4"
-            layout="prev, pager, next"
-            :total="1000"
-          >
-          </el-pagination>
+        <div class="col-lg-9 col-md-9 col-sm-6 col-12 product-list">
+          <div class="row">
+            <ProductItem />
+            <ProductItem />
+            <ProductItem />
+            <ProductItem />
+            <ProductItem />
+            <ProductItem />
+            <ProductItem />
+          </div>
+          <div class="row mt-3">
+            <el-pagination
+              class="product-pagination"
+              background
+              :pager-count="4"
+              layout="prev, pager, next"
+              :total="1000"
+            >
+            </el-pagination>
+          </div>
         </div>
       </div>
     </div>
@@ -114,13 +113,13 @@ export default {
           active: true
         }
       ],
-      selected: null,
+      selected: 1,
       options: [
-        { value: null, text: 'Please select an option' },
-        { value: 'a', text: 'This is First option' },
-        { value: 'b', text: 'Selected Option' },
-        { value: { C: '3PO' }, text: 'This is an option with object value' },
-        { value: 'd', text: 'This one is disabled', disabled: true }
+        { value: 1, text: 'Thứ tự theo mức độ phổ biến' },
+        { value: 2, text: 'Thứ tự theo mức độ đánh giá' },
+        { value: 3, text: 'Thứ tự theo sản phẩm mới' },
+        { value: 4, text: 'Thứ tự theo giá: thấp đến cao' },
+        { value: 5, text: 'Thứ tự theo giá: cao xuống thấp' }
       ]
     }
   }
@@ -129,5 +128,18 @@ export default {
 <style scoped>
 .product-pagination {
   margin: auto;
+}
+.page-title {
+  background-color: #fff;
+}
+.page-title .order-by {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+.page-title .order-by > p {
+  margin: 0px 10px;
 }
 </style>

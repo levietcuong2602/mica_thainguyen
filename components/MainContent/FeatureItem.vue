@@ -8,6 +8,7 @@
         <img
           :src="icon"
           class="img-responsive rounded"
+          style="object-fit: contain;"
         >
       </div>
       <div class="col-lg-9 col-md-9 col-sm-10 col-10">
@@ -41,6 +42,9 @@ export default {
 }
 </script>
 <style scoped>
+.row {
+  align-items: center;
+}
 @media only screen and (min-width: 992px) {
   .img-responsive {
     width: 100%;
