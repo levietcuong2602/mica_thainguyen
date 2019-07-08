@@ -21,6 +21,8 @@
   </swiper>
 </template>
 <script>
+import { brands } from '@/data/brand';
+
 export default {
   name: 'BrandSwiper',
   data() {
@@ -53,40 +55,7 @@ export default {
           }
         }
       },
-      brands: [
-        {
-          id: 1,
-          img: 'https://mica.thainguyenweb.com/wp-content/uploads/2018/06/brand01.jpg',
-        },
-        {
-          id: 2,
-          img: 'https://mica.thainguyenweb.com/wp-content/uploads/2018/06/brand01.jpg',
-        },
-        {
-          id: 3,
-          img: 'https://mica.thainguyenweb.com/wp-content/uploads/2018/06/brand01.jpg',
-        },
-        {
-          id: 4,
-          img: 'https://mica.thainguyenweb.com/wp-content/uploads/2018/06/brand01.jpg',
-        },
-        {
-          id: 5,
-          img: 'https://mica.thainguyenweb.com/wp-content/uploads/2018/06/brand01.jpg',
-        },
-        {
-          id: 6,
-          img: 'https://mica.thainguyenweb.com/wp-content/uploads/2018/06/brand01.jpg',
-        },
-        {
-          id: 7,
-          img: 'https://mica.thainguyenweb.com/wp-content/uploads/2018/06/brand01.jpg',
-        },
-        {
-          id: 8,
-          img: 'https://mica.thainguyenweb.com/wp-content/uploads/2018/06/brand01.jpg',
-        },
-      ]
+      brands
     }
   }
 }
