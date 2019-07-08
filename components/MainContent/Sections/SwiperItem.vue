@@ -11,7 +11,7 @@
       <p>Hộp mica kỹ thuật HMKT-3110</p>
     </div>
     <div class="card-bottom">
-      <a href="#">Đọc tiếp</a>
+      <a href="/products/detail/1">Đọc tiếp</a>
     </div>
   </div>
 </template>

@@ -5,10 +5,15 @@
         <p>{{ title }}</p>
       </div>
       <div class="select-all">
-        <p>Xem tất cả <i
-            class="icon-arrow-right text-danger"
-            style="font-size: 70%"
-          ></i></p>
+        <a
+          href="/products"
+          style="color: #dd3333;"
+        >
+          <p>Xem tất cả <i
+              class="icon-arrow-right text-danger"
+              style="font-size: 70%"
+            ></i></p>
+        </a>
       </div>
     </div>
     <slot></slot>
