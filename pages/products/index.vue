@@ -38,13 +38,11 @@
         </div>
         <div class="col-lg-9 col-md-9 col-sm-6 col-12 product-list">
           <div class="row">
-            <ProductItem />
-            <ProductItem />
-            <ProductItem />
-            <ProductItem />
-            <ProductItem />
-            <ProductItem />
-            <ProductItem />
+            <ProductItem
+              v-for="product in products"
+              :key="product.id"
+              :product="product"
+            />
           </div>
           <div class="row mt-3">
             <el-pagination
@@ -65,12 +63,15 @@
 import FeatureBox from '@/components/MainContent/Sidebar/FeatureBox';
 import ProductItem from '@/components/MainContent/Products/ProductItem';
 
+import { mapGetters } from 'vuex';
+
 export default {
   name: 'Products',
   components: {
     FeatureBox,
     ProductItem
   },
+  computed: { ...mapGetters({ getProductCategory: 'product/getProductCategory' }) },
   data() {
     return {
       categories: [
@@ -120,8 +121,12 @@ export default {
         { value: 3, text: 'Thứ tự theo sản phẩm mới' },
         { value: 4, text: 'Thứ tự theo giá: thấp đến cao' },
         { value: 5, text: 'Thứ tự theo giá: cao xuống thấp' }
-      ]
+      ],
+      products: []
     }
+  },
+  created() {
+    this.products = this.getProductCategory('cate_1_1');
   }
 }
 </script>

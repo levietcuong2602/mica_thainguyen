@@ -32,12 +32,12 @@
       </div>
       <div class="row mt-3">
         <!-- Todo responsive and navigation -->
-        <SectionContent title="Vật tư mica">
+        <SectionContent title="Electronic Devices">
           <SwiperSlider />
         </SectionContent>
       </div>
       <div class="row mt-3">
-        <SectionContent title="Kệ menu mica">
+        <SectionContent title="Electronic Accessories">
           <SwiperSlider />
         </SectionContent>
       </div>

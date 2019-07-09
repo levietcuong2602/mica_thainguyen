@@ -1,1 +1,3 @@
 export const UPDATE_IS_OPEN_SIDEOUT = 'UPDATE_IS_OPEN_SIDEOUT';
+
+// Products

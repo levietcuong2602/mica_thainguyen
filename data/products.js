@@ -116,7 +116,7 @@ export const products = [{
   },
   {
     id: '4061523',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_2',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/c1/2a/0c/845c47bbb70a207050dd6bab2032defb.jpg',
     thumbnail: ['https://salt.tikicdn.com/cache/64x64/ts/product/c1/2a/0c/845c47bbb70a207050dd6bab2032defb.jpg',
       'https://salt.tikicdn.com/cache/64x64/ts/product/cb/e2/06/c818dd07d700a442119008ffa60e026a.jpg'
@@ -128,7 +128,7 @@ export const products = [{
   },
   {
     id: '10596796',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_2',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/4a/f5/9c/f8fd3ab7f73d6fd744c47e8c25809f67.jpg',
     thumbnail: ['https://salt.tikicdn.com/cache/64x64/ts/product/4a/f5/9c/f8fd3ab7f73d6fd744c47e8c25809f67.jpg',
       'https://salt.tikicdn.com/cache/64x64/ts/product/11/5e/da/0be539e559c3f5ba7f0cc1c5f55238fa.jpg'
@@ -140,7 +140,7 @@ export const products = [{
   },
   {
     id: '3169241',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_2',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/78/8a/95/e6496fb242be0925eaa09625ebb83e66.jpg',
     thumbnail: [],
     title: 'Điện Thoại Xiaomi Redmi 6 (3/32GB) - Hàng...',
@@ -150,7 +150,7 @@ export const products = [{
   },
   {
     id: '4536405',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_2',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/c9/5d/6d/2f1b9a496fcabdf2c6b3bcd8be8c32c5.jpg',
     thumbnail: ['https://salt.tikicdn.com/cache/64x64/ts/product/c9/5d/6d/2f1b9a496fcabdf2c6b3bcd8be8c32c5.jpg',
       'https://salt.tikicdn.com/cache/64x64/ts/product/b6/ad/57/62ac7a3fba48b3b089c8842e574eb600.jpg',
@@ -163,7 +163,7 @@ export const products = [{
   },
   {
     id: '12389305',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_2',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/1d/43/81/fe2ed92dfd035bf43818557d97f41914.jpg',
     thumbnail: ['https://salt.tikicdn.com/cache/64x64/ts/product/1d/43/81/fe2ed92dfd035bf43818557d97f41914.jpg',
       'https://salt.tikicdn.com/cache/64x64/ts/product/99/96/a2/9e1b77fe3d8383861f7c1c93de81579f.jpg'
@@ -175,7 +175,7 @@ export const products = [{
   },
   {
     id: '841240',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_2',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/99/c2/fc/8df095461781e5923a7b86df307e5c8d.jpg',
     thumbnail: [],
     title: 'Máy Đọc Sách Kindle 2018 (8th) - Đen - Hàng...            ',
@@ -185,7 +185,7 @@ export const products = [{
   },
   {
     id: '848363',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_2',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/b8/c6/f0/9796e2be4ed79a4f2b1b14d0d6feb7a1.jpg',
     thumbnail: [],
     title: 'Điện Thoại Xiaomi Mi Mix 2 (Black) - Hàng...            ',
@@ -195,7 +195,7 @@ export const products = [{
   },
   {
     id: '840584',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_2',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/37/99/3d/64b1c8858dd000c233cd3a948cfd4ed4.jpg',
     thumbnail: [],
     title: 'Máy Đọc Sách Kindle Paperwhite 2018(7 th) - ...',
@@ -205,7 +205,7 @@ export const products = [{
   },
   {
     id: '1733317',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_2',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/e1/02/63/83c26e50b63607187dce7068e74a6524.jpg',
     thumbnail: ['https://salt.tikicdn.com/cache/64x64/ts/product/e1/02/63/83c26e50b63607187dce7068e74a6524.jpg',
       'https://salt.tikicdn.com/cache/64x64/ts/product/a1/e0/95/a1799f0d14618d6ef8925277fce5f1de.jpg',
@@ -218,7 +218,7 @@ export const products = [{
   },
   {
     id: '2891809',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_2',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/30/6b/9a/3b34232c6e8e60bdde7ab71c8cffee4e.jpg',
     thumbnail: ['https://salt.tikicdn.com/cache/64x64/ts/product/30/6b/9a/3b34232c6e8e60bdde7ab71c8cffee4e.jpg',
       'https://salt.tikicdn.com/cache/64x64/ts/product/99/b8/b2/ce7c38a43ee20089c2f7f657f0f3f58d.jpg',
@@ -231,7 +231,7 @@ export const products = [{
   },
   {
     id: '6597807',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_2',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/be/f2/ba/f7cacd4da64139b88acb667612d814ba.jpg',
     thumbnail: [],
     title: 'Máy đọc sách Kindle PaperWhite 2018 gen 4...',
@@ -241,7 +241,7 @@ export const products = [{
   },
   {
     id: '12480743',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_2',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/4a/f5/9c/440d5d817af0d36980a4fb0c27464454.jpg',
     thumbnail: ['https://salt.tikicdn.com/cache/64x64/ts/product/4a/f5/9c/440d5d817af0d36980a4fb0c27464454.jpg',
       'https://salt.tikicdn.com/cache/64x64/ts/product/11/5e/da/77f918e0a8c7a04c6c6ae81c9a2f0099.jpg',
@@ -254,7 +254,7 @@ export const products = [{
   },
   {
     id: '310984',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_2',
     img: 'https://salt.tikicdn.com/cache/200x200/media/catalog/product/6/1/61n-asjod2l-_sl1500_.u2769.d20170703.t121515.606501.jpg',
     thumbnail: ['https://salt.tikicdn.com/cache/64x64/media/catalog/product/6/1/61n-asjod2l-_sl1500_.u2769.d20170703.t121515.606501.jpg',
       'https://salt.tikicdn.com/cache/64x64/media/catalog/product/1/_/1.u2769.d20170703.t121558.278037.jpg'
@@ -266,7 +266,7 @@ export const products = [{
   },
   {
     id: '3873909',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_3',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/9c/68/40/387207352c75c2752450b3bc9b7fd0bb.jpg',
     thumbnail: ['https://salt.tikicdn.com/cache/64x64/ts/product/9c/68/40/387207352c75c2752450b3bc9b7fd0bb.jpg',
       'https://salt.tikicdn.com/cache/64x64/ts/product/a2/da/a1/f5cf18eecf4056dffd6658f983f5d37f.jpg',
@@ -279,7 +279,7 @@ export const products = [{
   },
   {
     id: '4410373',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_3',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/ec/95/6c/5ea0f429bd2d5a5138a281b294481bcd.jpg',
     thumbnail: [],
     title: 'Điện Thoại Bàn Nippon NP1202 (Trắng) - Hàng...            ',
@@ -289,7 +289,7 @@ export const products = [{
   },
   {
     id: '1439651',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_3',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/d0/0f/7e/72a56ead5c6c2770885c8e6e7276ab44.jpg',
     thumbnail: [],
     title: 'Máy Đọc Sách Kindle Oasis 2018 (9th) - Xám...',
@@ -299,7 +299,7 @@ export const products = [{
   },
   {
     id: '1929211',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_3',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/6e/18/9a/4112773409b8773bc71b0f9ff3c6cbe2.jpg',
     thumbnail: ['https://salt.tikicdn.com/cache/64x64/ts/product/6e/18/9a/4112773409b8773bc71b0f9ff3c6cbe2.jpg',
       'https://salt.tikicdn.com/cache/64x64/ts/product/8e/69/ac/6e1e6a36aca585f4d797fd0b6e383825.jpg',
@@ -312,7 +312,7 @@ export const products = [{
   },
   {
     id: '648112',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_3',
     img: 'https://salt.tikicdn.com/cache/200x200/media/catalog/product/3/3/3310-warmred.u2409.d20170519.t102151.344869_1.jpg',
     thumbnail: ['https://salt.tikicdn.com/cache/64x64/media/catalog/product/3/3/3310-warmred.u2409.d20170519.t102151.344869_1.jpg',
       'https://salt.tikicdn.com/cache/64x64/media/catalog/product/3/3/3310-dark-blue.u2409.d20170519.t102151.266309_2.jpg',
@@ -326,7 +326,7 @@ export const products = [{
   },
   {
     id: '10280108',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_3',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/00/18/f9/21c44c36f729b430d1ce4073209e5482.jpg',
     thumbnail: ['https://salt.tikicdn.com/cache/64x64/ts/product/00/18/f9/21c44c36f729b430d1ce4073209e5482.jpg',
       'https://salt.tikicdn.com/cache/64x64/ts/product/f5/e9/d6/347f87c2aed742f83a3574dfd9a46fa6.jpg',
@@ -339,7 +339,7 @@ export const products = [{
   },
   {
     id: '3932165',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_3',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/47/40/70/48a601dde91cf13873471009364690a8.jpg',
     thumbnail: ['https://salt.tikicdn.com/cache/64x64/ts/product/47/40/70/48a601dde91cf13873471009364690a8.jpg',
       'https://salt.tikicdn.com/cache/64x64/ts/product/5b/21/bb/2c9d5c03e87f6d55a0228e679a6bbdc8.jpg'
@@ -351,7 +351,7 @@ export const products = [{
   },
   {
     id: '841448',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_3',
     img: 'https://salt.tikicdn.com/cache/200x200/media/catalog/product/1/_/1.u5618.d20170823.t183147.991597.jpg',
     thumbnail: [],
     title: 'Máy Đọc Sách Kindle 2018 (8th) - Trắng -...',
@@ -361,7 +361,7 @@ export const products = [{
   },
   {
     id: '5054881',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_3',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/d6/f7/d8/943331e43d10ca77cdfd78ff189095b0.jpg',
     thumbnail: [],
     title: 'Điện Thoại Xiaomi Redmi Note 6 Pro (3/32) -...            ',
@@ -371,7 +371,7 @@ export const products = [{
   },
   {
     id: '177294',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_3',
     img: 'https://salt.tikicdn.com/cache/200x200/media/catalog/product/1/2/1235htu67457646_1_1.jpg',
     thumbnail: ['https://salt.tikicdn.com/cache/64x64/media/catalog/product/1/2/1235htu67457646_1_1.jpg',
       'https://salt.tikicdn.com/cache/64x64/media/catalog/product/d/e/denbac_1.u2751.d20170317.t175301.311371.jpg'
@@ -383,7 +383,7 @@ export const products = [{
   },
   {
     id: '1826543',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_4',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/0b/3a/a4/9ea1f71f880fc9703e6a16f9dfb834e9.jpg',
     thumbnail: [],
     title: 'Điện Thoại iPhone 8 Plus 64GB (Đỏ) - Nhập...',
@@ -393,7 +393,7 @@ export const products = [{
   },
   {
     id: '938786',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_4',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/89/99/e3/d9b715d0185a31c1df8d2f7a23359679.jpg',
     thumbnail: ['https://salt.tikicdn.com/cache/64x64/ts/product/89/99/e3/d9b715d0185a31c1df8d2f7a23359679.jpg',
       'https://salt.tikicdn.com/cache/64x64/ts/product/1a/f0/a2/0978d091d83849160e6d31945ce9ae08.jpg'
@@ -405,7 +405,7 @@ export const products = [{
   },
   {
     id: '7403729',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_4',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/84/a4/3f/a9f96248f08fb19d50bc4da89df1bb03.jpg',
     thumbnail: ['https://salt.tikicdn.com/cache/64x64/ts/product/84/a4/3f/a9f96248f08fb19d50bc4da89df1bb03.jpg',
       'https://salt.tikicdn.com/cache/64x64/ts/product/b3/0c/6f/4fc75a0f7eac016cb2a36435b10e68b7.jpg'
@@ -417,7 +417,7 @@ export const products = [{
   },
   {
     id: '1823081',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_4',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/b5/e4/10/90375518604b6972d727430c3bef8a24.jpg',
     thumbnail: ['https://salt.tikicdn.com/cache/64x64/ts/product/b5/e4/10/90375518604b6972d727430c3bef8a24.jpg',
       'https://salt.tikicdn.com/cache/64x64/ts/product/16/f6/7f/ca3dd1e04421065a3f08605aba97dfae.jpg'
@@ -429,7 +429,7 @@ export const products = [{
   },
   {
     id: '938076',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_4',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/e2/0b/88/5c7c4b15955d4eb35b4fa7bcd554e5f5.jpg',
     thumbnail: ['https://salt.tikicdn.com/cache/64x64/ts/product/e2/0b/88/5c7c4b15955d4eb35b4fa7bcd554e5f5.jpg',
       'https://salt.tikicdn.com/cache/64x64/ts/product/e7/29/a6/a476795197ac86a83df8c868a74627b9.jpg',
@@ -442,7 +442,7 @@ export const products = [{
   },
   {
     id: '855372',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_4',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/7a/9b/5d/bc505ecbe78bb55e86241bb0f076b797.jpg',
     thumbnail: ['https://salt.tikicdn.com/cache/64x64/ts/product/7a/9b/5d/bc505ecbe78bb55e86241bb0f076b797.jpg',
       'https://salt.tikicdn.com/cache/64x64/ts/product/61/f5/ca/a5c5f86f8a79a2bad81bec8ae43636ff.jpg',
@@ -456,7 +456,7 @@ export const products = [{
   },
   {
     id: '3132977',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_4',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/a9/6a/9d/54e3e5c5c3f51ff89fe6b46252b38976.jpg',
     thumbnail: [],
     title: 'Điện Thoại Asus Zenfone Max Pro M1 - Hàng...            ',
@@ -466,7 +466,7 @@ export const products = [{
   },
   {
     id: '7530033',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_4',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/c5/45/a6/e1c6409d2a77a9d20d7840bc78ec87d9.jpg',
     thumbnail: [],
     title: 'Điện Thoại Nokia 106 Dual Sim - Hàng Chính...            ',
@@ -476,7 +476,7 @@ export const products = [{
   },
   {
     id: '634303',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_4',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/cb/dd/b3/075a4a434bfa0ea3b69f9e3ee09ccaa3.jpg',
     thumbnail: [],
     title: 'Điện Thoại OPPO F3 (4GB/64GB) - Hàng Chính...',
@@ -486,7 +486,7 @@ export const products = [{
   },
   {
     id: '283110',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_4',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/6b/1b/39/8b38e2c425ac392fc94faec57415cc89.jpg',
     thumbnail: ['https://salt.tikicdn.com/cache/64x64/ts/product/6b/1b/39/8b38e2c425ac392fc94faec57415cc89.jpg',
       'https://salt.tikicdn.com/cache/64x64/ts/product/31/71/dd/4ee9964b205cdf0d28d3647d7b43e346.jpg',
@@ -500,7 +500,7 @@ export const products = [{
   },
   {
     id: '10579996',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_5',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/8e/89/ea/0b377bbd8412d63a66cee97e3770a12e.jpg',
     thumbnail: ['https://salt.tikicdn.com/cache/64x64/ts/product/8e/89/ea/0b377bbd8412d63a66cee97e3770a12e.jpg',
       'https://salt.tikicdn.com/cache/64x64/ts/product/d0/62/da/92e1a637a70f793f44272ec9d63feff9.jpg'
@@ -512,7 +512,7 @@ export const products = [{
   },
   {
     id: '4964305',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_5',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/09/7f/c8/02a7af0097c2dd6115aae14ba652319b.jpg',
     thumbnail: ['https://salt.tikicdn.com/cache/64x64/ts/product/09/7f/c8/02a7af0097c2dd6115aae14ba652319b.jpg',
       'https://salt.tikicdn.com/cache/64x64/ts/product/e9/84/69/913dd6ffcca04f1d98d6d2ef17aa86de.jpg',
@@ -525,7 +525,7 @@ export const products = [{
   },
   {
     id: '6878293',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_5',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/3e/59/92/ba47f150a32b700d593b521f327f3b9c.jpg',
     thumbnail: [],
     title: 'iPad Pro 11 inch (2018) 64GB Wifi Cellular -...            ',
@@ -535,7 +535,7 @@ export const products = [{
   },
   {
     id: '2686969',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_5',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/37/99/3d/64b1c8858dd000c233cd3a948cfd4ed4.jpg',
     thumbnail: [],
     title: 'Máy Đọc Sách Kindle Paperwhite 2018(7 th) - ...',
@@ -545,7 +545,7 @@ export const products = [{
   },
   {
     id: '11251951',
-    idCategory: 'cate_1_1',
+    idCategory: 'cate_1_5',
     img: 'https://salt.tikicdn.com/cache/200x200/ts/product/7f/27/33/3d7be765dcdfd3c03ae0883b92ce0ff6.jpg',
     thumbnail: [],
     title: 'Điện thoại bàn không dây Panasonic KX-TGB110            ',

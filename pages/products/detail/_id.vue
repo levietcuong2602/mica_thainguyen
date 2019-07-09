@@ -10,20 +10,20 @@
                 style="width: 100%;"
               >
                 <img
-                  :src="img"
+                  :src="product.img"
                   style="width: 100%; height: 100%;"
                 >
               </div>
               <vue-easy-lightbox
                 :visible="visible"
-                :imgs="img"
+                :imgs="product.img"
                 @hide="handleHide"
               ></vue-easy-lightbox>
             </div>
             <div class="row">
               <div class="img-small-wrap">
                 <ThumbnailZoom
-                  v-for="img in imgs"
+                  v-for="img in product.thumbnail"
                   :key="img"
                   :img="img"
                 />
@@ -32,7 +32,7 @@
           </div>
           <div class="col-lg-7 col-md-6 col-sm-12">
             <div class="product-name">
-              <h5>MÔ HÌNH LẮP GHÉP HG 00 DIVER ACE</h5>
+              <h5>{{ product.title }}</h5>
             </div>
             <div class="ratings">
               <div class="rating">
@@ -46,9 +46,9 @@
             </div>
             <hr>
             <div class="price-box">
-              <div class="special-price">384,000 đ</div>
-              <div class="old-price">400,000 đ</div>
-              <div class="sales-price">69% GIẢM</div>
+              <div class="special-price">{{ formatNumber(product.finalPrice) }} đ</div>
+              <div class="old-price">{{ formatNumber(product.priceRegular) }} đ</div>
+              <div class="sales-price">{{ formatNumber(product.sale) }}% GIẢM</div>
             </div>
             <hr>
             <div class="row">
@@ -154,11 +154,11 @@
               name="description"
             >
               <div class="description mt-3">
-                <h4>Thông tin Hộp mica kỹ thuật HMKT-1612</h4>
+                <h4>Thông tin {{ product.title }}</h4>
                 <h5>Đặc điểm nổi bật</h5>
                 <div class="row">
                   <div class="col-4">– Tên sản phẩm :</div>
-                  <div class="col-8">Hộp mica kỹ thuật HMKT-1612</div>
+                  <div class="col-8">{{ product.title }}</div>
                 </div>
                 <div class="row">
                   <div class="col-4">– Ngày sản xuất :</div>
@@ -275,10 +275,11 @@ import SwiperSlider from '@/components/MainContent/Sections/SwiperSlider';
 
 
 import { swiperOptions } from '@/mixins/swiper-options';
+import { formatNumber } from '@/mixins/format-number';
 
 export default {
   name: 'ProductDetailPage',
-  mixins: [swiperOptions],
+  mixins: [swiperOptions, formatNumber],
   data() {
     return {
       items: [
@@ -325,10 +326,22 @@ export default {
     }
   },
   props: {
-    img: {
-      type: String,
-      default: 'https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png'
-    },
+    product: {
+      type: Object,
+      default:() => ({
+          id: '10142975',
+          idCategory: 'cate_1_1',
+          img: 'https://salt.tikicdn.com/cache/200x200/ts/product/54/0d/0d/391f8ffc33dd8e63dc7d339451f11eb7.jpg',
+          thumbnail: ['https://salt.tikicdn.com/cache/64x64/ts/product/54/0d/0d/391f8ffc33dd8e63dc7d339451f11eb7.jpg',
+            'https://salt.tikicdn.com/cache/64x64/ts/product/74/6b/2e/4352b235cf2e5b58ec760e4f364228bb.jpg'
+          ],
+          title: 'Điện Thoại Coolpad N3 - Hàng Chính Hãng',
+          finalPrice: '1190000',
+          priceRegular: '1790000',
+          sale: '-34'
+        }
+      )
+    }
   },
   components: {
     FeatureBox,
