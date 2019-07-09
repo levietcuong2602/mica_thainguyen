@@ -20,9 +20,19 @@
 </template>
 
 <script>
-import { swiper, swiperSlide } from 'vue-awesome-swiper';
+let swiper, swiperSlide;
+// if (process.browser) {
+//   swiper = require('vue-awesome-swiper');
+//   swiperSlide = require('vue-awesome-swiper');
+// }
+// import { swiper, swiperSlide } from 'vue-awesome-swiper';
 import SwiperItem from './SwiperItem';
 export default {
+  components: {
+    // swiper: swiper,
+    // swiperSlide: swiperSlide,
+    SwiperItem
+  },
   data() {
     return {
       swiperOption: {
@@ -134,11 +144,6 @@ export default {
         }]
       )
     }
-  },
-  components: {
-    swiper,
-    swiperSlide,
-    SwiperItem
   }
 }
 </script>
@@ -172,7 +177,9 @@ export default {
 .swiper-button-next,
 .swiper-button-prev {
   /* display: none; */
-  background: #dd3333;
+  /* background: #dd3333; */
+  background-repeat: no-repeat;
+  background-size: auto;
   padding: 2px;
   box-shadow: 2px 2px 10px grey;
   color: #dd3333;
@@ -181,6 +188,12 @@ export default {
   width: 36px;
   border-radius: 100%;
   height: 36px;
+}
+.swiper-button-prev {
+  background-image: url(/img/1.png);
+}
+.swiper-button-next {
+  background-image: url(/img/2.png);
 }
 /* .swiper-button-next:hover,
 .swiper-button-prev:hover,

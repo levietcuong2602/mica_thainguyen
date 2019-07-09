@@ -64,7 +64,9 @@ export default {
 .swiper-button-next,
 .swiper-button-prev {
   /* display: none; */
-  background: #dd3333;
+  /* background: #dd3333; */
+  background-repeat: no-repeat;
+  background-size: auto;
   padding: 2px;
   box-shadow: 2px 2px 10px grey;
   color: #dd3333;
@@ -73,5 +75,11 @@ export default {
   width: 36px;
   border-radius: 100%;
   height: 36px;
+}
+.swiper-button-prev {
+  background-image: url(/img/1.png);
+}
+.swiper-button-next {
+  background-image: url(/img/2.png);
 }
 </style>
