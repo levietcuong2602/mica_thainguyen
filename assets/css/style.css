@@ -56,6 +56,10 @@ button.el-carousel__button {
   height: 100%;
 }
 
+.el-carousel__container .el-carousel__arrow {
+  outline: none;
+}
+
 /* post details: news/detail/_id */
 .post-detail,
 .post-comment {

@@ -10,6 +10,7 @@
   z-index: 1000;
   transition: 0.5s;
   /* overflow-x: hidden; */
+  box-shadow: 2px 2px 10px grey;
 }
 
 .zap-slideout .search-form {
@@ -69,8 +70,8 @@
 .zap-slideout-opener {
   display: none;
   position: absolute;
-  top: 0px;
-  left: 93%;
+  top: -5px;
+  left: 83%;
   margin-left: 20px;
   font-weight: 600;
   text-transform: uppercase;

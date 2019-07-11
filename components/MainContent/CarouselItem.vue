@@ -7,7 +7,7 @@
       <img
         :src="image"
         alt="image-1"
-        class="width: 100%; heigth: 100%;"
+        style="width: 100%; height: 100%;"
       >
     </el-carousel-item>
   </el-carousel>

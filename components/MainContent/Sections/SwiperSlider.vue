@@ -174,6 +174,9 @@ export default {
   -ms-flex-align: center;
   align-items: center;
 }
+.swiper-slide:hover {
+  box-shadow: 2px 2px 10px grey;
+}
 .swiper-button-next,
 .swiper-button-prev {
   /* display: none; */
