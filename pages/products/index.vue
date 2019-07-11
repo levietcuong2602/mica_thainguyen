@@ -17,7 +17,9 @@
       <div class="row mt-3">
         <div class="col-lg-3 col-md-3 col-sm-6 col-12">
           <div class="asidebar">
-            <div class="title"><span>DANH MỤC SẢN PHẨM</span></div>
+            <div class="title">
+              <span>DANH MỤC SẢN PHẨM</span>
+            </div>
             <ul class="category-product">
               <li
                 v-for="category in categories"
@@ -48,9 +50,9 @@
             <el-pagination
               class="product-pagination"
               background
-              :pager-count="4"
+              :pager-count="5"
               layout="prev, pager, next"
-              :total="1000"
+              :total="100"
             >
             </el-pagination>
           </div>
